@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  color: white;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  color: white;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.contribute-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.contribute-btn:hover {
+  background-color: #ffc107;
+  color: black;
+}
+
+.hero {
+  background-image: url("selat-lembeh-sulawesi-utara.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5em;
+  margin: 0.5em 0;
+  font-family: "Georgia", serif;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin: 0.5em 0 1.5em;
+}
+
+.hero-content .btn {
+  padding: 15px 30px;
+  font-size: 1em;
+  background-color: #ffc107;
+  color: #2e8b57;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.hero-content .btn:hover {
+  background-color: #ffa000;
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #eee9e9;
+}
+
+.about-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+  flex: 1;
+  max-width: 600px;
+}
+
+.text-container h4 {
+  color: #6a8a4e;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.text-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #004e2e;
+}
+
+.text-container p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #181717;
+  justify-content: center;
+}
+
+/* Bagian Fitur */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.feature h3 {
+  color: #88c057;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.feature h2 {
+  font-size: 20px;
+  color: #333;
+}
