@@ -214,60 +214,109 @@ body {
   text-transform: uppercase;
 }
 
-/* Footer Styles */
+
 .footer {
-  background-color: rgb(90, 153, 53);
-  color: white;
-  padding: 20px 0;
-  font-family: Arial, sans-serif;
+  background-color: rgb(90, 153, 53); /* Hijau gelap */
+  padding: 40px 20px;
+  color: #ffffff;
 }
 
 .footer-container {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
+  flex-wrap: wrap; /* Supaya responsif */
 }
 
-.footer-section {
-  flex: 1;
-  margin: 10px;
-  min-width: 200px;
+.footer-left,
+.footer-right {
+  flex: 1; /* Membagi ruang secara proporsional */
+  min-width: 300px; /* Minimal lebar per kolom */
 }
 
-.footer-section h4 {
-  font-size: 18px;
+.footer-left {
+  margin-right: 20px; /* Memberi jarak antar kolom */
+}
+
+.footer-left h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-nav {
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  display: inline-block;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #d4e157; /* Hijau muda */
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-socials a {
+  margin-right: 15px;
+}
+
+.footer-socials img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.footer-socials img:hover {
+  transform: scale(1.2);
+}
+
+.footer-right h3 {
+  font-size: 20px;
   margin-bottom: 10px;
-  text-transform: uppercase;
+  color: #ffffff;
 }
 
-.footer-section p,
-.footer-section a {
+.footer-right p {
   font-size: 14px;
   line-height: 1.6;
-  color: white;
-  text-decoration: none;
 }
 
-.footer-section a:hover {
-  text-decoration: underline;
+.contribute-button {
+  background-color: #d4e157; /* Hijau muda */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.footer-links {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li {
-  margin: 5px 0;
+.contribute-button:hover {
+  background-color: #c0ca33; /* Hijau yang lebih gelap */
 }
 
 .footer-bottom {
   text-align: center;
   margin-top: 20px;
-  font-size: 14px;
-  border-top: 1px solid #ffffff33;
+  font-size: 12px;
+  color: #070706;
+  border-top: 1px solid #ffffff;
   padding-top: 10px;
 }
+
 
