@@ -69,8 +69,7 @@ body {
 }
 
 .hero {
-  background-image: url("selat-lembeh-sulawesi-utara.jpg");
-  background-size: cover;
+  background-image: url("image.png");
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
