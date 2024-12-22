@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenConnect</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #E3F2FD; /* Biru Muda Lembut */
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .donation-container {
+      background-color: #FFFFFF; /* Putih */
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      width: 400px;
+      border: 1px solid #BBDEFB; /* Biru Lembut */
+    }
+
+    .donation-container h2 {
+      font-size: 22px;
+      color: #1E88E5; /* Biru Sedang */
+      margin-bottom: 20px;
+    }
+
+    .donation-container p {
+      font-size: 14px;
+      color: #616161; /* Abu-Abu Gelap */
+    }
+
+    .donation-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .donation-button {
+      background-color: #64B5F6; /* Biru Cerah */
+      border: 1px solid #42A5F5; /* Biru Lebih Gelap */
+      border-radius: 5px;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #FFFFFF; /* Putih */
+    }
+
+    .donation-button:hover {
+      background-color: #42A5F5; /* Biru Lebih Gelap */
+    }
+
+    .custom-amount {
+      margin: 20px 0;
+    }
+
+    .custom-amount input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #90CAF9; /* Biru Lembut */
+      border-radius: 5px;
+    }
+
+    .custom-amount p {
+      font-size: 12px;
+      color: #757575; /* Abu-Abu Netral */
+      margin-top: 5px;
+    }
+
+    .payment-button {
+      background-color: #1E88E5; /* Biru Sedang */
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .payment-button:hover {
+      background-color: #1565C0; /* Biru Lebih Gelap */
+    }
+  </style>
+</head>
+<body>
+  <div class="donation-container">
+    <h2>Contribute Now</h2>
+    <p>Make a difference today</p>
+
+    <div class="donation-buttons">
+      <div class="donation-button">IDR. 15.000</div>
+      <div class="donation-button">IDR. 30.000</div>
+      <div class="donation-button">IDR. 50.000</div>
+      <div class="donation-button">IDR. 75.000</div>
+      <div class="donation-button">IDR. 100.000</div>
+    </div>
+
+    <div class="custom-amount">
+      <p>Other donation amounts</p>
+      <input type="text" placeholder="IDR">
+      <p>Min. donation of IDR 15,000</p>
+    </div>
+
+    <div class="payment-button">Proceed to Payment</div>
+  </div>
+</body>
+</html>
