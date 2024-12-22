@@ -111,7 +111,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 20px;
+  padding: 180px 20px;
   background-color: #eee9e9;
 }
 
@@ -161,6 +161,7 @@ body {
   font-size: 16px;
   color: #181717;
   justify-content: center;
+  gap: 20px;
 }
 
 /* Bagian Fitur */
@@ -191,3 +192,82 @@ body {
   font-size: 20px;
   color: #333;
 }
+
+.feature img {
+  width: 450px;
+  height: 250px;
+}
+
+.section-title-container {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  text-align: center;
+  margin: 0; 
+}
+
+.section-title {
+  font-size: 3em; 
+  font-weight: bold;
+  color: #004e2e;
+  text-transform: uppercase;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: rgb(90, 153, 53);
+  color: white;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 14px;
+  line-height: 1.6;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #ffffff33;
+  padding-top: 10px;
+}
+
