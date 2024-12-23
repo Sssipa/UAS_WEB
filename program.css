@@ -66,107 +66,263 @@ body {
     color: rgb(89, 177, 30);
     }
 
-
-.footer {
-    background-color: rgb(90, 153, 53); /* Hijau gelap */
-    padding: 40px 20px;
-    color: #ffffff;
+    .hero-section {
+      position: relative;
+      background-image: url('img/bc_program.jpg'); /* Ganti dengan path gambar */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* Membuat gambar tetap saat di-scroll */
+      height: 655px; /* Sesuaikan tinggi */
+      color: white;
   }
   
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: auto;
-    flex-wrap: wrap; /* Supaya responsif */
+  .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); /* Transparansi overlay */
   }
   
-  .footer-left,
-  .footer-right {
-    flex: 1; /* Membagi ruang secara proporsional */
-    min-width: 300px; /* Minimal lebar per kolom */
+  .hero-content {
+      position: absolute;
+      top: 50%; /* Posisikan di tengah secara vertikal */
+      left: 10%; /* Posisikan di sisi kiri */
+      transform: translateY(-50%); /* Koreksi untuk posisi vertikal */
+      z-index: 2;
+      text-align: left; /* Teks rata kiri */
   }
   
-  .footer-left {
-    margin-right: 20px; /* Memberi jarak antar kolom */
+  .hero-content h1 {
+      font-size: 2.5em;
+      margin: 0;
   }
   
-  .footer-left h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+  .hero-content p {
+      font-size: 1.2em;
+      margin: 10px 0 0;
   }
   
-  .footer-nav {
-    margin-bottom: 20px;
-  }
-  
-  .footer-nav a {
-    display: inline-block;
-    margin-right: 15px;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 14px;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-nav a:hover {
-    color: #d4e157; /* Hijau muda */
-  }
-  
-  .footer-socials {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .footer-socials a {
-    margin-right: 15px;
-  }
-  
-  .footer-socials img {
-    width: 24px;
-    height: 24px;
-    filter: brightness(0) invert(1);
-    transition: transform 0.3s ease;
-  }
-  
-  .footer-socials img:hover {
-    transform: scale(1.2);
-  }
-  
-  .footer-right h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #ffffff;
-  }
-  
-  .footer-right p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-  
-  .contribute-button {
-    background-color: #d4e157; /* Hijau muda */
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contribute-button:hover {
-    background-color: #c0ca33; /* Hijau yang lebih gelap */
-  }
-  
-  .footer-bottom {
+  /* Bagian Section program */
+  .program-section {
+    padding: 90px 20px;
+    background-color: #f7f7f7; /* Warna latar belakang untuk section */
     text-align: center;
-    margin-top: 20px;
-    font-size: 12px;
-    color: #070706;
-    border-top: 1px solid #ffffff;
-    padding-top: 10px;
-  }
+}
+
+.section-title {
+    text-align: center; /* Pusatkan teks */
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 40px 0; /* Jarak atas dan bawah */
+    font-size: 2em;
+    color: #333;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ukuran minimum dan maksimum card */
+    gap: 30px; /* Jarak antar card */
+    max-width: 1200px; /* Lebar maksimum grid */
+    margin: 0 auto; /* Tengah pada halaman */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Membuat konten vertikal */
+    justify-content: space-between; /* Ruang seimbang atas dan bawah */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Gambar selalu proporsional */
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin: 15px 10px 10px;
+    color: #555;
+}
+
+.card p {
+    font-size: 1em;
+    margin: 0 10px 15px;
+    color: #777;
+    line-height: 1.5;
+}
+
+.card-footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* cooming soon */
+.coming-soon-section {
+  background-color: #f4f8f4; /* Hijau lembut */
+  padding: 60px 20px;
+  text-align: center;
+  color: #2e7d32; /* Hijau tua */
+}
+
+.coming-soon-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #388e3c; /* Hijau sedang */
+}
+
+.coming-soon-description {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #4caf50; /* Hijau cerah */
+}
+
+.coming-soon-timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Responsif untuk layar kecil */
+}
+
+.timer-box {
+  background-color: #a5d6a7; /* Hijau terang */
+  padding: 20px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100px;
+  text-align: center;
+}
+
+.timer-number {
+  font-size: 2em;
+  font-weight: bold;
+  color: #2e7d32; /* Hijau tua */
+}
+
+.timer-label {
+  font-size: 0.9em;
+  margin-top: 5px;
+  color: #33691e; /* Hijau lebih gelap */
+}
+
+
+/* Footer */
+.footer {
+  background-color: rgb(90, 153, 53); /* Hijau gelap */
+  padding: 40px 20px;
+  color: #ffffff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap; /* Supaya responsif */
+}
+
+.footer-left,
+.footer-right {
+  flex: 1; /* Membagi ruang secara proporsional */
+  min-width: 300px; /* Minimal lebar per kolom */
+}
+
+.footer-left {
+  margin-right: 20px; /* Memberi jarak antar kolom */
+}
+
+.footer-left h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-nav {
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  display: inline-block;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #d4e157; /* Hijau muda */
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-socials a {
+  margin-right: 15px;
+}
+
+.footer-socials img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.footer-socials img:hover {
+  transform: scale(1.2);
+}
+
+.footer-right h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer-right p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contribute-button {
+  background-color: #d4e157; /* Hijau muda */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contribute-button:hover {
+  background-color: #c0ca33; /* Hijau yang lebih gelap */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #070706;
+  border-top: 1px solid #ffffff;
+  padding-top: 10px;
+}
