@@ -1,9 +1,9 @@
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
-  }
+}
 
-  .header {
+.header {
   width: 100%;
   position: fixed;
   top: 0;
@@ -11,46 +11,46 @@ body {
   z-index: 1000;
   padding: 10px 50px;
   backdrop-filter: blur(5px);
-  }
+}
 
-  .header .container {
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  }
+}
 
-  .logo {
+.logo {
   display: flex;
   align-items: center;
-  }
+}
 
-  .logo img {
+.logo img {
   width: 50px;
   margin-right: 10px;
-  }
+}
 
-  .logo h1 {
+.logo h1 {
   color: black;
   font-size: 1.5em;
   margin: 0;
-  }
+}
 
-  .menu {
+.menu {
   display: flex;
   gap: 30px;
-  }
+}
 
-  .menu a {
+.menu a {
   color: rgb(36, 34, 34);
   text-decoration: none;
   font-weight: bold;
-  }
+}
 
-  .menu a:hover {
+.menu a:hover {
   text-decoration: underline;
-  }
+}
 
-  .contribute-btn {
+.contribute-btn {
   background-color: rgb(89, 177, 30);
   color: #eee8e8;
   padding: 10px 15px;
@@ -59,12 +59,12 @@ body {
   transition: background-color 0.3s ease;
   font-weight: bold;
   cursor: pointer;
-  }
+}
 
-  .contribute-btn:hover {
+.contribute-btn:hover {
   background-color: #f0f5f7;
   color: rgb(89, 177, 30);
-  }
+}
 
 /* Atur style team */
 .container {
