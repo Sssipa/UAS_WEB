@@ -96,13 +96,13 @@ p {
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  color: white; /* Ubah warna teks agar terlihat di latar belakang */
+  color: white; 
   transition: transform 0.2s;
   position: relative;
-  height: 250px; /* Atur tinggi card */
+  height: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Menempatkan teks di bagian bawah */
+  justify-content: flex-end; 
 }
 
 .member:hover {
@@ -112,17 +112,17 @@ p {
 .member h2 {
   font-size: 1.5em;
   margin: 5px 0;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Bayangan teks untuk keterbacaan */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); 
 }
 
 .member p {
   font-size: 0.9em;
   margin: 0;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Bayangan teks untuk keterbacaan */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
 }
 
 .footer {
-  background-color: rgb(90, 153, 53); /* Hijau gelap */
+  background-color: rgb(90, 153, 53); 
   padding: 40px 20px;
   color: #ffffff;
 }
@@ -133,16 +133,16 @@ p {
   align-items: flex-start;
   max-width: 1200px;
   margin: auto;
-  flex-wrap: wrap; /* Supaya responsif */
+  flex-wrap: wrap; 
 }
 
 .footer-right {
-  flex: 1; /* Membagi ruang secara proporsional */
-  min-width: 300px; /* Minimal lebar per kolom */
+  flex: 1; 
+  min-width: 300px; 
 }
 
 .footer-left {
-  margin-right: 20px; /* Memberi jarak antar kolom */
+  margin-right: 20px; 
 }
 
 .footer-left h2 {
@@ -164,7 +164,7 @@ p {
 }
 
 .footer-nav a:hover {
-  color: #d4e157; /* Hijau muda */
+  color: #d4e157; 
 }
 
 .footer-socials {
@@ -200,7 +200,7 @@ p {
 }
 
 .contribute-button {
-  background-color: #d4e157; /* Hijau muda */
+  background-color: #d4e157; 
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -212,7 +212,7 @@ p {
 }
 
 .contribute-button:hover {
-  background-color: #c0ca33; /* Hijau yang lebih gelap */
+  background-color: #c0ca33; 
 }
 
 .footer-bottom {
