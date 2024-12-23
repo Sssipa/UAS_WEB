@@ -216,7 +216,7 @@ body {
 
 
 .footer {
-  background-color: rgb(90, 153, 53); /* Hijau gelap */
+  background-color: rgb(90, 153, 53); 
   padding: 40px 20px;
   color: #ffffff;
 }
@@ -227,17 +227,17 @@ body {
   align-items: flex-start;
   max-width: 1200px;
   margin: auto;
-  flex-wrap: wrap; /* Supaya responsif */
+  flex-wrap: wrap;
 }
 
 .footer-left,
 .footer-right {
-  flex: 1; /* Membagi ruang secara proporsional */
-  min-width: 300px; /* Minimal lebar per kolom */
+  flex: 1; 
+  min-width: 300px; 
 }
 
 .footer-left {
-  margin-right: 20px; /* Memberi jarak antar kolom */
+  margin-right: 20px; 
 }
 
 .footer-left h2 {
@@ -259,7 +259,7 @@ body {
 }
 
 .footer-nav a:hover {
-  color: #d4e157; /* Hijau muda */
+  color: #d4e157; 
 }
 
 .footer-socials {
@@ -295,7 +295,7 @@ body {
 }
 
 .contribute-button {
-  background-color: #d4e157; /* Hijau muda */
+  background-color: #d4e157; 
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -307,7 +307,7 @@ body {
 }
 
 .contribute-button:hover {
-  background-color: #c0ca33; /* Hijau yang lebih gelap */
+  background-color: #c0ca33; 
 }
 
 .footer-bottom {
